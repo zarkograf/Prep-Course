@@ -183,7 +183,7 @@ describe('elevarAlCubo(num)', function() {
   });
 });
 
-describe('elevar(num, exponent)', function() {
+ describe('elevar(num, exponent)', function() {
   it('Deberia devolver el numero elevado al exponente indicado', function() {
     expect(elevar(2, 2)).toBe(4);
     expect(elevar(2, 3)).toBe(8);
@@ -192,7 +192,7 @@ describe('elevar(num, exponent)', function() {
   });
 });
 
-describe('redondearNumero(num)', function() {
+ describe('redondearNumero(num)', function() {
   it('Deberia devolver el numero redondeado', function() {
     expect(redondearNumero(1.5)).toBe(2);
     expect(redondearNumero(2)).toBe(2);
@@ -200,7 +200,7 @@ describe('redondearNumero(num)', function() {
   });
 });
 
-describe('redondearHaciaArriba(num)', function() {
+ describe('redondearHaciaArriba(num)', function() {
   it('Deberia devolver el numero redondeado para arriba', function() {
     expect(redondearHaciaArriba(1.5)).toBe(2);
     expect(redondearHaciaArriba(2)).toBe(2);
@@ -208,7 +208,7 @@ describe('redondearHaciaArriba(num)', function() {
   });
 });
 
-describe('numeroRandom()', function() {
+ describe('numeroRandom()', function() {
   it('Debería devolver un número entre 0 y 1', function() {
     expect(typeof numeroRandom()).toBe('number');
     expect(numeroRandom()).toBeGreaterThanOrEqual(0);
@@ -216,7 +216,7 @@ describe('numeroRandom()', function() {
   });
 });
 
-describe('esPositivo(numero)', function() {
+ describe('esPositivo(numero)', function() {
   it('Debería devolver el string \Es positivo ó Es negativo\ según corresponda', function() {
     expect(esPositivo(0)).toBe(false);
     expect(esPositivo(23)).toBe('Es positivo');
@@ -224,28 +224,28 @@ describe('esPositivo(numero)', function() {
   });
 });
 
-describe('agregarSimboloExclamacion(str)', function() {
+ describe('agregarSimboloExclamacion(str)', function() {
   it('Deberia agregar un signo de exclamacion al final del string', function() {
     expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
     expect(agregarSimboloExclamacion('Soy Henry')).toBe('Soy Henry!');
   });
 });
 
-describe('combinarNombres(firstName, lastName)', function() {
+ describe('combinarNombres(firstName, lastName)', function() {
   it('Deberia devolver los strings combinados con un espacio en el medio', function() {
     expect(combinarNombres('hello', 'world')).toBe('hello world');
     expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
   });
 });
 
-describe('obtenerSaludo(name)', function() {
+ describe('obtenerSaludo(name)', function() {
   it('Deberia devolver el string \'Hola {name}!\'', function() {
     expect(obtenerSaludo('Martin')).toBe('Hola Martin!');
     expect(obtenerSaludo('Antonio')).toBe('Hola Antonio!');
   });
 });
 
-describe('obtenerAreaRectangulo(alto, ancho)', function() {
+ describe('obtenerAreaRectangulo(alto, ancho)', function() {
   it('Deberia retornar el area correcta del rectangulo', function() {
     expect(obtenerAreaRectangulo(2, 2)).toBe(4);
     expect(obtenerAreaRectangulo(3, 6)).toBe(18);
@@ -253,7 +253,7 @@ describe('obtenerAreaRectangulo(alto, ancho)', function() {
   });
 });
 
-describe('retornarPerimetro(lado)', function() {
+ describe('retornarPerimetro(lado)', function() {
   it('Deberia retornar el perímetro correcto del cuadrado', function() {
     expect(retornarPerimetro(2)).toBe(8);
     expect(retornarPerimetro(8)).toBe(32);
@@ -262,7 +262,7 @@ describe('retornarPerimetro(lado)', function() {
 });
 
 
-describe('areaDelTriangulo( base, altura)', function() {
+ describe('areaDelTriangulo( base, altura)', function() {
   it('Deberia retornar el area correcta del triángulo', function() {
     expect(areaDelTriangulo(10, 5)).toBe(25);
     expect(areaDelTriangulo(20, 10)).toBe(100);
@@ -270,7 +270,7 @@ describe('areaDelTriangulo( base, altura)', function() {
   });
 });
 
-describe('deEuroAdolar(euro)', function() {
+  describe('deEuroAdolar(euro)', function() {
   it('Deberia retornar el valor correcto de euro a dolar', function() {
     expect(deEuroAdolar(100)).toBe(120);
     expect(deEuroAdolar(200)).toBe(240);
@@ -278,7 +278,7 @@ describe('deEuroAdolar(euro)', function() {
   });
 });
 
-describe('esVocal(letra)', function() {
+ describe('esVocal(letra)', function() {
   it('Deberia devolver el string "Dato incorrecto", si el valor ingresado tiene más de una letra', function() {
     expect(esVocal("la")).toBe("Dato incorrecto");
     expect(esVocal("pero")).toBe("Dato incorrecto");
